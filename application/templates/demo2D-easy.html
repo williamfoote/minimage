@@ -25,9 +25,10 @@
             <p>{{solution}}</p>
             <br/>
         </center>
+        <br/>
     {% endif %}
 {% else %}
-    <h3>plot image pixels given the corners (x, y) of the rectangle.</h3>
+    <h1>plot image pixels given the corners (x, y) of the rectangle.</h1>
     <br/>
     <form method="POST", action = #>
         {{ form.csrf_token }}
@@ -121,6 +122,7 @@
         <p>
             <button type="submit" class="btn btn-dark">Run</button>
         </p>
+        <br/>
     </form>
 
 {% endif %}

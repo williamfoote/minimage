@@ -18,16 +18,17 @@
         var graphs = {{graphJSON|safe}};
         Plotly.plot('chart',graphs,{});
         </script>
+        <br/>
     {% else %}
         <center>
             <h1>Your results are here.</h1>
             <br/>
             <p>{{solution}}</p>
-            <br/>
+            <br/><br/><br/>
         </center>
     {% endif %}
 {% else %}
-    <h3>plot image pixels given the corners (x, y) of the rectangle.</h3>
+    <h1>plot image pixels given the corners (x, y) of the rectangle.</h1>
 
     <form method="POST", action = #>
         <br/>
@@ -76,6 +77,7 @@
             <p>
                 <button type="submit" class="btn btn-dark">Run</button>
             </p>
+            <br/>
         
         {% if form.visualize.errors %}
             <ul class="errors">
